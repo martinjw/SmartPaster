@@ -7,8 +7,8 @@
     <ProjectGuid>{B8D186B6-3465-4F1D-8157-04367BE5C9ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SmartPaster2013_UnitTests</RootNamespace>
-    <AssemblyName>SmartPaster2013_UnitTests</AssemblyName>
+    <RootNamespace>SmartPaster_UnitTests</RootNamespace>
+    <AssemblyName>SmartPaster_UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkProfile />
@@ -127,9 +127,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SmartPaster2013.csproj">
+    <ProjectReference Include="..\SmartPaster.csproj">
       <Project>{E4C30299-C9D8-4860-BBB0-02F5887D3ED2}</Project>
-      <Name>SmartPaster2013</Name>
+      <Name>SmartPaster</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
