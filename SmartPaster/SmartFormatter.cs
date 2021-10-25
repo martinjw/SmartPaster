@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace SmartPaster2013
+namespace SmartPaster
 {
     public static class SmartFormatter
     {
@@ -44,9 +44,9 @@ namespace SmartPaster2013
                 .Replace("\t", "\\t") //escape tabs
                 .Replace("\r", "\\r") //cr
                 .Replace("\n", "\\n") //lf
-                //.Replace("\"\" + ", "") //"" +
+                                      //.Replace("\"\" + ", "") //"" +
                 .Replace("\\r\\n", "\" + Environment.NewLine + \r\n\"") //escaped crlf to Env.NewLine
-                ;  
+                ;
 
             return Quote + txt + Quote;
         }
@@ -54,11 +54,11 @@ namespace SmartPaster2013
         public static string LiterallyInCxx(string txt)
         {
             var lines = from line in txt.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None)
-                select "\"" + line
-                           .Replace("\\", "\\\\")
-                           .Replace("\"", "\\\"")
-                           .Replace("\t", @"\t")
-                       + "\"";
+                        select "\"" + line
+                                   .Replace("\\", "\\\\")
+                                   .Replace("\"", "\\\"")
+                                   .Replace("\t", @"\t")
+                               + "\"";
             return String.Join("\r\n", lines);
         }
 
