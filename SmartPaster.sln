@@ -1,18 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26206.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPaster", "SmartPaster\SmartPaster.csproj", "{E4C30299-C9D8-4860-BBB0-02F5887D3ED2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPaster", "SmartPaster\SmartPaster.csproj", "{D300BF6A-8FD3-4B7D-91CF-600FD7FE172D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2DC34759-FCD8-4627-B701-48F17B531123}"
 	ProjectSection(SolutionItems) = preProject
-		IntegrationTests.testsettings = IntegrationTests.testsettings
 		License.txt = License.txt
-		UnitTests.testsettings = UnitTests.testsettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPaster_UnitTests", "SmartPaster\SmartPaster_UnitTests\SmartPaster_UnitTests.csproj", "{B8D186B6-3465-4F1D-8157-04367BE5C9ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPaster_UnitTests", "SmartPaster_UnitTests\SmartPaster_UnitTests.csproj", "{B8D186B6-3465-4F1D-8157-04367BE5C9ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +18,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E4C30299-C9D8-4860-BBB0-02F5887D3ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4C30299-C9D8-4860-BBB0-02F5887D3ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4C30299-C9D8-4860-BBB0-02F5887D3ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4C30299-C9D8-4860-BBB0-02F5887D3ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D300BF6A-8FD3-4B7D-91CF-600FD7FE172D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D300BF6A-8FD3-4B7D-91CF-600FD7FE172D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D300BF6A-8FD3-4B7D-91CF-600FD7FE172D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D300BF6A-8FD3-4B7D-91CF-600FD7FE172D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8D186B6-3465-4F1D-8157-04367BE5C9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8D186B6-3465-4F1D-8157-04367BE5C9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8D186B6-3465-4F1D-8157-04367BE5C9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF8B51EB-BEE6-49F6-BADE-23B84597E8E0}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-﻿namespace SmartPaster2013
+﻿namespace SmartPaster
 {
     partial class ReplaceForm
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SmartPaster2013;
+using SmartPaster;
 
-namespace SmartPaster2013_UnitTests
+namespace SmartPaster_UnitTests
 {
     [TestClass]
     public class SmartFormatterTests
