@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SmartPaster")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Martin Willey")]
+[assembly: AssemblyCompany("martin w")]
 [assembly: AssemblyProduct("SmartPaster")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]

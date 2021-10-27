@@ -11,8 +11,8 @@ namespace SmartPaster
         public const string Name = "SmartPaster 64bit";
         public const string Description = @"Paste clipboard into comments or strings in C#, VB, C++";
         public const string Language = "en-US";
-        public const string Version = "1.0";
-        public const string Author = "Martin Willey";
+        public const string Version = "2.0";
+        public const string Author = "martin w";
         public const string Tags = "PasteAs Verbatim StringBuilder Comment Paste";
     }
 }
