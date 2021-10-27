@@ -5,7 +5,7 @@
 	<Extern href="vsshlids.h"/>
 	<Include href="KnownImageIds.vsct"/>
 	<Include href="VSGlobals.vsct"/>
-	<Include href="SmartPaster.vsct" />
+	<!--<Include href="SmartPaster.vsct" />-->
 	
 	<Commands package="SmartPaster22">
 		<Menus>
@@ -14,7 +14,7 @@
 				<Parent guid="SmartPaster22" id="MyMenuGroup" />
 				<Strings>
 					<ButtonText>Paste As...</ButtonText>
-					<CommandName>Paste As...</CommandName>
+					<!--<CommandName>Paste As...</CommandName>-->
 				</Strings>
 			</Menu>
 
