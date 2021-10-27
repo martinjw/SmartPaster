@@ -13,8 +13,7 @@ A "Paste As" right-click option that allows clipboard text to be:
 * Paste as Byte Array
 
 On Visual Studio Gallery:
-* VS2017/VS2019: http://visualstudiogallery.msdn.microsoft.com/0611a238-7405-4d5f-ace0-5b3d5cf325e0
-* VS2022: TBC
+* VS2022: https://marketplace.visualstudio.com/items?itemName=martinw.SmartPaster
 
 * v1.1 adds Unicode, VS2015 support, both regular and verbatim strings.
 * v1.2 adds Paste as Byte Array, C++ support (thanks to leg0)
@@ -27,6 +26,7 @@ On Visual Studio Gallery:
 https://smartpaster2010.codeplex.com/
 * SmartPaster 2017 Guthub version (2013, 2015, 2017 and 2019):
 https://github.com/martinjw/SmartPaster2013/
+* VS2017/VS2019 extension: https://marketplace.visualstudio.com/items?itemName=martinw.SmartPaster2013
 
 ## Credits
 
