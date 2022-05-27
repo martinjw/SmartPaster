@@ -29,5 +29,6 @@ namespace SmartPaster
         public const int cmdidPasteAsStringBuilder = 0x0103;
         public const int cmdidPasteAsBytes = 0x0104;
         public const int cmdidPasteWithReplace = 0x0105;
+        public const int cmdidPasteAsRaw = 0x0106;
     }
 }

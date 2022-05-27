@@ -55,6 +55,7 @@
     <Compile Include="Commands\Helpers.cs" />
     <Compile Include="Commands\PasteAsBytes.cs" />
     <Compile Include="Commands\PasteAsComment.cs" />
+    <Compile Include="Commands\PasteAsRaw.cs" />
     <Compile Include="Commands\PasteAsStringBuilder.cs" />
     <Compile Include="Commands\PasteAsVerbatimString.cs" />
     <Compile Include="Commands\PasteWithReplace.cs" />
@@ -110,10 +111,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Community.VisualStudio.VSCT" Version="16.0.29.6" PrivateAssets="all" />
-    <PackageReference Include="Community.VisualStudio.Toolkit.17" Version="17.0.339" ExcludeAssets="Runtime">
+    <PackageReference Include="Community.VisualStudio.Toolkit.17" Version="17.0.451" ExcludeAssets="Runtime">
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.5232" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.2.2186">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ReplaceForm.resx">

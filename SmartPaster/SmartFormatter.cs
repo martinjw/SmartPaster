@@ -10,6 +10,14 @@ namespace SmartPaster
         private const string Quote = "\"";
 
         /// <summary>
+        /// Raw strings for C#11 (https://docs.microsoft.com/en-gb/dotnet/csharp/whats-new/csharp-11#raw-string-literals)
+        /// </summary>
+        public static string RawInCs(string txt)
+        {
+            return "\"\"\"" + txt + "\"\"\"";
+        }
+
+        /// <summary>
         /// Stringinizes text passed to it for use in C#
         /// </summary>
         /// <param name="txt">Text to be Stringinized</param>
