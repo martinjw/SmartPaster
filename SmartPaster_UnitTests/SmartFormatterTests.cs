@@ -139,8 +139,8 @@ Environment.NewLine +
 
             //don't double quotes, just use line comment prefix
             //there's a trailing line break too
-            Assert.AreEqual(@"//我给你一本书 。
-//This has a " + "\t tab and \" quotes but this \\t is not an escape\r\n", result);
+            Assert.AreEqual(@"// 我给你一本书 。
+// This has a " + "\t tab and \" quotes but this \\t is not an escape\r\n", result);
         }
 
         [TestMethod]
@@ -184,6 +184,13 @@ sb.AppendLine(""This has a 	 tab and """" quotes but this \t is not an escape"")
 ", result);
         }
 
-
+        [TestMethod]
+        public void TestRawString()
+        {
+            //VS extensions aren't c#11
+            var txt = "var moreQuotes = \"\"\"\" As you can see,\"\"\"Raw string literals\"\"\" can start and end with more than three double-quotes when needed.\"\"\"\";";
+            var result = SmartFormatter.RawInCs(txt);
+            Assert.AreEqual("\"\"\"\"\"var moreQuotes = \"\"\"\" As you can see,\"\"\"Raw string literals\"\"\" can start and end with more than three double-quotes when needed.\"\"\"\";\"\"\"\"\"", result);
+        }
     }
 }

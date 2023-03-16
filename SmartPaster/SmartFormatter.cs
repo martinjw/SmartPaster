@@ -14,7 +14,12 @@ namespace SmartPaster
         /// </summary>
         public static string RawInCs(string txt)
         {
-            return "\"\"\"" + txt + "\"\"\"";
+            var quotes = "\"\"\"";
+            while (txt.Contains(quotes))
+            {
+                quotes += "\"";
+            }
+            return quotes + txt + quotes;
         }
 
         /// <summary>
@@ -38,7 +43,7 @@ namespace SmartPaster
         }
 
         /// <summary>
-        /// Literallies the text in C#.
+        /// Literally the text in C#.
         /// </summary>
         /// <param name="txt">Literally, the text to be literallized.</param>
         /// <returns></returns>
@@ -129,12 +134,11 @@ namespace SmartPaster
         /// <returns>C# Commentized text</returns>
         public static string CommentizeInCs(string txt)
         {
-            const string cmtChar = "//";
+            const string cmtChar = "// ";
 
             var sb = new StringBuilder(txt.Length);
 
             //process the passed string (txt), one line at a time
-            //the original was horrible WTF code
             using (var reader = new StringReader(txt))
             {
                 string line;
